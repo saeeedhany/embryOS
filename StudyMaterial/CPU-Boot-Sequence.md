@@ -1,4 +1,4 @@
-# 🖥️ The CPU Boot Sequence: From Power On to Program Execution
+# The CPU Boot Sequence: From Power On to Program Execution
 
 Have you ever wondered what happens the moment you press the POWER button on your computer? It might seem like magic, but behind the scenes, your CPU orchestrates a complex series of steps to bring your system to life. Let's demystify this "magic trick" of the CPU.
 
