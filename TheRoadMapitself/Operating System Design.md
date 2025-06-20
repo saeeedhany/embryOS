@@ -146,7 +146,7 @@ Yes. Linux = kernel. Ubuntu = Linux kernel + GNU tools + shell.
 Load the kernel from disk and pass control to it.
 
 ### 🔑 Learn:
-- CPU boot sequence: [StudyMaterial/CPU-Boot-Sequence.md](StudyMaterial/CPU-Boot-Sequence.md)
+- CPU boot sequence: [StudyMaterial/CPU-Boot-Sequence.md](,,/StudyMaterial/CPU-Boot-Sequence.md)
 - Real Mode: [StudyMaterial/Real-Mode.md](StudyMaterial/Real-Mode.md)
 - Assembly (nasm): [StudyMaterial/Assembly-Nasm.md](StudyMaterial/Assembly-Nasm.md)
 - BIOS interrupts (int 0x10, int 0x13): [StudyMaterial/BIOS-Interrupts.md](StudyMaterial/BIOS-Interrupts.md)
