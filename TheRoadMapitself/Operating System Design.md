@@ -1,11 +1,12 @@
-# 📘 Introduction: What Is This Roadmap For?
+# 🛣️ Roadmap to Build an Operating System From Scratch
+
+## 📘 Introduction: What Is This Roadmap For?
 
 Welcome,
 
 The document you're reading is not just a guide — it's a **complete roadmap** for building a real, functioning operating system from scratch.
 
-Unlike theoretical courses or textbooks, this roadmap is designed for **practical builders**. It walks you through every layer of system creation:  
-from the first byte the CPU reads after power-on, all the way to executing your own shell commands inside a system **you built entirely with your own hands**.
+Unlike theoretical courses or textbooks, this roadmap is designed for **practical builders**. It walks you through every layer of system creation: from the first byte the CPU reads after power-on, all the way to executing your own shell commands inside a system **you built entirely with your own hands**.
 
 ---
 
@@ -25,7 +26,7 @@ Every phase in this file has 3 parts:
 
 | Label        | Meaning                                                        |
 |--------------|----------------------------------------------------------------|
-| **🎯 Goal**  | What you should accomplish by the end of the phase             |
+| **🎯 Goal** | What you should accomplish by the end of the phase             |
 | **🔑 Learn** | What concepts/tools you should understand before building      |
 | **🔨 Build** | What you must build with your hands — real working code        |
 
@@ -41,14 +42,14 @@ You can consider what you've built a real **Operating System** when it includes 
 
 | Component               | Description                                                 |
 |------------------------|-------------------------------------------------------------|
-| **Bootloader**         | Loads the kernel from disk into memory                      |
-| **Kernel**             | Manages the CPU, memory, and hardware                       |
+| **Bootloader** | Loads the kernel from disk into memory                      |
+| **Kernel** | Manages the CPU, memory, and hardware                       |
 | **Interrupt Handling** | Controls how hardware communicates with the CPU             |
-| **Memory Management**  | Allocates and frees RAM properly                            |
+| **Memory Management** | Allocates and frees RAM properly                            |
 | **System Calls (Syscalls)** | Interface for programs to talk to the kernel           |
-| **Program Execution**  | Ability to load and run external user programs              |
+| **Program Execution** | Ability to load and run external user programs              |
 | **Filesystem** (optional at first) | Read and write files                          |
-| **Shell**              | User interface (CLI/GUI) to interact with the OS            |
+| **Shell** | User interface (CLI/GUI) to interact with the OS            |
 
 If you can:
 - Boot from your code
@@ -145,11 +146,11 @@ Yes. Linux = kernel. Ubuntu = Linux kernel + GNU tools + shell.
 Load the kernel from disk and pass control to it.
 
 ### 🔑 Learn:
-- CPU boot sequence
-- Real Mode
-- Assembly (nasm)
-- BIOS interrupts (int 0x10, int 0x13)
-- FAT12 basics (optional)
+- CPU boot sequence: [StudyMaterial/CPU-Boot-Sequence.md](StudyMaterial/CPU-Boot-Sequence.md)
+- Real Mode: [StudyMaterial/Real-Mode.md](StudyMaterial/Real-Mode.md)
+- Assembly (nasm): [StudyMaterial/Assembly-Nasm.md](StudyMaterial/Assembly-Nasm.md)
+- BIOS interrupts (int 0x10, int 0x13): [StudyMaterial/BIOS-Interrupts.md](StudyMaterial/BIOS-Interrupts.md)
+- FAT12 basics (optional): [StudyMaterial/FAT12-Basics.md](StudyMaterial/FAT12-Basics.md)
 
 ### 🔨 Build:
 - 512-byte boot sector (MBR)
@@ -165,10 +166,10 @@ Load the kernel from disk and pass control to it.
 Boot into a protected mode C kernel.
 
 ### 🔑 Learn:
-- Switching from Real to Protected Mode
-- Set up the stack
-- C + Assembly linking
-- Linker scripts
+- Switching from Real to Protected Mode: [StudyMaterial/Switching-Real-to-Protected-Mode.md](StudyMaterial/Switching-Real-to-Protected-Mode.md)
+- Set up the stack: [StudyMaterial/Stack-Setup.md](StudyMaterial/Stack-Setup.md)
+- C + Assembly linking: [StudyMaterial/C-Assembly-Linking.md](StudyMaterial/C-Assembly-Linking.md)
+- Linker scripts: [StudyMaterial/Linker-Scripts.md](StudyMaterial/Linker-Scripts.md)
 
 ### 🔨 Build:
 - Kernel runs at 0x100000
@@ -183,9 +184,9 @@ Boot into a protected mode C kernel.
 React to hardware (keyboard, timer).
 
 ### 🔑 Learn:
-- IDT (Interrupt Descriptor Table)
-- PIC and IRQs
-- Writing ISRs
+- IDT (Interrupt Descriptor Table): [StudyMaterial/IDT.md](StudyMaterial/IDT.md)
+- PIC and IRQs: [StudyMaterial/PIC-and-IRQs.md](StudyMaterial/PIC-and-IRQs.md)
+- Writing ISRs: [StudyMaterial/ISRs.md](StudyMaterial/ISRs.md)
 
 ### 🔨 Build:
 - Timer handler (`IRQ0`)
@@ -200,10 +201,10 @@ React to hardware (keyboard, timer).
 Run and switch between tasks.
 
 ### 🔑 Learn:
-- Context switching
-- Task management structure
-- Round-Robin scheduling
-- Writing syscall handler (`int 0x80`)
+- Context switching: [StudyMaterial/Context-Switching.md](StudyMaterial/Context-S`witching.md)
+- Task management structure: [StudyMaterial/Task-Management-Structure.md](StudyMaterial/Task-Management-Structure.md)
+- Round-Robin scheduling: [StudyMaterial/Round-Robin-Scheduling.md](StudyStudyMaterial/Round-Robin-Scheduling.md)
+- Writing syscall handler (`int 0x80`): [StudyMaterial/Syscall-Handler.md](StudyMaterial/Syscall-Handler.md)
 
 ### 🔨 Build:
 - Two test tasks
@@ -218,8 +219,8 @@ Run and switch between tasks.
 Load programs from disk.
 
 ### 🔑 Learn:
-- FAT12 or a simple custom FS
-- Program loader
+- FAT12 or a simple custom FS: [StudyMaterial/FAT12-or-Custom-FS.md](StudyMaterial/FAT12-or-Custom-FS.md)
+- Program loader: [StudyMaterial/Program-Loader.md](StudyMaterial/Program-Loader.md)
 
 ### 🔨 Build:
 - Minimal file reader (`ls`, `cat`)
@@ -234,9 +235,9 @@ Load programs from disk.
 Provide interactive command-line interface.
 
 ### 🔑 Learn:
-- Command parser
-- Connect shell to syscall layer
-- I/O handling
+- Command parser: [StudyMaterial/Command-Parser.md](StudyMaterial/Command-Parser.md)
+- Connect shell to syscall layer: [StudyMaterial/Shell-to-Syscall-Layer.md](StudyMaterial/Shell-to-Syscall-Layer.md)
+- I/O handling: [StudyMaterial/IO-Handling.md](StudyMaterial/IO-Handling.md)
 
 ### 🔨 Build:
 - Basic shell
