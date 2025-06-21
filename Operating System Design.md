@@ -142,7 +142,7 @@ Linux refers specifically to the **kernel**. A complete operating system distrib
 Load the kernel from disk and transfer execution control.
 
 ### Learn:
--   [StudyMaterial/CPU-Boot-Sequence.md](CPU boot sequence:)
+-   [CPU boot sequence:](StudyMaterial/CPU-Boot-Sequence.md)
 -   Real Mode: [StudyMaterial/Real-Mode.md](StudyMaterial/Real-Mode.md)
 -   Assembly (nasm): [StudyMaterial/Assembly-Nasm.md](StudyMaterial/Assembly-Nasm.md)
 -   BIOS interrupts (int 0x10, int 0x13): [StudyMaterial/BIOS-Interrupts.md](StudyMaterial/BIOS-Interrupts.md)
