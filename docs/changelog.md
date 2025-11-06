@@ -19,4 +19,9 @@ bootloader.asm
 - [8] Jump to Kernel
 - [9] Boot signature (0xAA55)
 
+*19-oct-2024* !Actually this file modified in *7-nov-2024* but what i've made was in the first date..
+
+What happened was that i decide to test that i could enter the kernel from it's sector with simple code before doing
+the actuall one with `C` to make sure that it works or not but it didn't work at all XD, So im currently debugging the problem..
+
 
